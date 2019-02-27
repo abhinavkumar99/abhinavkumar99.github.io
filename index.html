@@ -1,6 +1,133 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Welcome to my site</h1>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Scrolling Nav - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Abhinav Kumar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a target="_blank" class="nav-link js-scroll-trigger" href="./resume.pdf">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white">
+    <div class="container text-center">
+      <h1>Abhinav Kumar</h1>
+      <p class="lead">Welcome to my site! Hope you find something interesting.</p>
+      
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>About Me</h2>
+          <p class="lead">I am a Georgia Tech Industrial Engineering Major also studying Computer Science and Artificial Intelligence.</p>
+          <h2>Interests</h2>
+          <p class="lead">I hope to pursue a career in machine learning research, leveraging my computer science knowledge as well as the strong applied mathematics background my Industrial Engineering major provides me. I feel with this combination, I can have a deeper understanding of the technology and create impactful technologies.
+          </p>
+          <p class="lead">On a lighter note, I also enjoy hackathons, exercise, and science fiction in all its forms. <b>Excelsior!</b></p>
+          <br>
+          <h2>Skills</h2>
+          <ul>
+              <li><b>Machine Learning/Deep Learning:</b> I have completed Deeplearning.ai's Deep Learning Coursera Specialization, and have also used machine learning technologies in my work experience as well as exernal projects. I have also given a presentation on Neural Style Transfer at a HackGT hosted workshop, and I plan to continue giving presentations like this.</li>
+              <li><b>Industrial Engineering/Analysis:</b> My Industrial Engineering focus lies primarily in analysis and mathematics. I have experience with supply chain optimization as well as applying data analysis and statistical techniques to large datasets.</li>
+              <li><b>Web Development: </b> I have been working on my web development skills, recently taking on more work in this area. I primarily have experience in back-end development, but I am moving forward to learn front-end development as well.</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Projects</h2>
+          <ul>
+            <li><b>UPS Delay Analysis:</b> During my second semester working at UPS, I created a machine learning system to automatically analyze freight forwarding delays and rank their causes on a location by location basis. While there is a lot of work going on at UPS about reducing delays in the freight network, there was no system leveraging the analytical power of machine learning for this task. I created a pipeline that reads in data about historical shipments, trains a set of classifiers to predict different kinds of delays, and then uses those classifiers' decision criteria to rank what features of shipments were causing those delays. At that point, the system will write a report on the cause of these delays as well as create a SQL database and stored procedure for more detailed searching of shipment information. The stored procedure also gives the user the ability to analyze the correlation between different types of delays. This will be used to isolate and target problems in the UPS network and improve customers' service times.</li>
+            <li><b>Golden Gate:</b> At TreeHacks 2019, my team created Golden Gate, a React and Express powered Chrome extension that reads news articles a user is currently viewing and suggests other related articles. In addition, the extension takes advantage of Google Cloud's NLP platform to perform sentiment analysis on these articles and provide an estimate of the bias present in the writing. It also extracts important entities in the text and links users to their Wikipedia pages. I personally handled the Express back-end as well as interfacing with and interpreting the results of Google Cloud's NLP API. I also did some work with the React front-end.</li>
+            <li><b>HackGT Team Formation:</b> Through HackGT's Technology Team, I am working on creating a team formation platform for use at hackathons. Currently, the platform provides opportunities for teams to find individuals and vice versa through feeds listing individuals and teams with open spots. Future plans include creating a ranking algorithm that can intelligently pair teams and users based off of their interests and skills.</li>
+            
+        </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Contact me!</h2>
+          <ul>
+              <li><a target="blank" class="lead" href="https://www.linkedin.com/in/abhinavk99/">LinkedIn</a></li>
+              <li><a target="blank" class="lead" href="https://github.com/abhinavkumar99">GitHub</a></li>
+              <li><a target="blank" class="lead" href="mailto: akumar437@gatech.edu">Email</a></li>
+              
+              
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
 </body>
+
 </html>
